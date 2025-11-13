@@ -78,7 +78,7 @@ st.markdown("""
 # --- Judul ---
 st.markdown("""
     <div class="main">
-        <h1>Portal Tugas Deep Learning</h1>
+        <h1>Tugas Mata Kuliah Deep Learning</h1>
         <h3>
             Farhan Ahmad Alvaro
         </h3>
@@ -115,5 +115,6 @@ st.markdown(f"""
         © 2025 | Farhan Ahmad Alvaro — Universitas Anda
     </footer>
 """, unsafe_allow_html=True)
+
 
 
