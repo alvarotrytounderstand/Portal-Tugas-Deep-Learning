@@ -112,9 +112,10 @@ st.markdown(f"""
     </div>
 
     <footer>
-        © 2025 | Farhan Ahmad Alvaro — Universitas Anda
+        © 2025 | Farhan Ahmad Alvaro — Universitas Gunadarma
     </footer>
 """, unsafe_allow_html=True)
+
 
 
 
