@@ -80,10 +80,13 @@ st.markdown("""
     <div class="main">
         <h1>Portal Tugas Deep Learning</h1>
         <h3>
-            <br>
-            <b>Farhan Ahmad Alvaro</b>
-            <b>50422520</b>
-            <b>4IA088</b>
+            Farhan Ahmad Alvaro
+        </h3>
+        <h3>
+            50422520
+        </h3>
+        <h3>
+            4IA08
         </h3>
         <hr style="width: 40%; margin: auto; border: 1px solid #42A5F5;">
     </div>
@@ -112,4 +115,5 @@ st.markdown(f"""
         © 2025 | Farhan Ahmad Alvaro — Universitas Anda
     </footer>
 """, unsafe_allow_html=True)
+
 
