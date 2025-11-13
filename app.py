@@ -80,10 +80,10 @@ st.markdown("""
     <div class="main">
         <h1>Portal Tugas Deep Learning</h1>
         <h3>
-            Oleh:<br>
-            <b>Farhan Ahmad Alvaro</b><br>
-            50422520<br>
-            4IA08
+            <br>
+            <b>Farhan Ahmad Alvaro</b>
+            <b>50422520</b>
+            <b>4IA088</b>
         </h3>
         <hr style="width: 40%; margin: auto; border: 1px solid #42A5F5;">
     </div>
