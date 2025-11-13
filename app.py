@@ -1,44 +1,34 @@
 # -----------------------------------------------------------------
 # NAMA FILE: app.py
-# (Portal Utama Tugas Deep Learning)
+# (Portal Utama Tugas Deep Learning - Versi Elegan Tanpa Background Biru)
 # -----------------------------------------------------------------
 import streamlit as st
 
-# Konfigurasi Halaman
 st.set_page_config(page_title="Portal Tugas Deep Learning", layout="wide")
 
-# --- Gaya Kustom (CSS) ---
+# --- CSS untuk tampilan elegan ---
 st.markdown("""
     <style>
-    /* Background gradient */
     body {
-        background: linear-gradient(135deg, #1E88E5 0%, #42A5F5 50%, #BBDEFB 100%);
-        color: #fff;
+        background-color: #0e1117;
         font-family: 'Segoe UI', sans-serif;
     }
 
-    /* Kontainer utama */
     .main {
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 30px 50px;
-        border-radius: 20px;
-        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(8px);
         text-align: center;
-        margin-top: 50px;
+        margin-top: 60px;
+        color: white;
     }
 
     h1 {
-        color: #ffffff;
         font-size: 3em;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     h3 {
-        color: #E3F2FD;
-        font-size: 1.4em;
-        font-weight: 400;
+        font-size: 1.3em;
+        color: #b0bec5;
         margin-bottom: 40px;
     }
 
@@ -47,55 +37,59 @@ st.markdown("""
         flex-direction: column;
         align-items: center;
         gap: 25px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .link-button {
         display: block;
         width: 80%;
         max-width: 500px;
-        padding: 18px;
-        background: linear-gradient(90deg, #1976D2, #42A5F5);
-        color: white;
+        padding: 20px;
+        color: #e3f2fd;
         text-align: center;
         text-decoration: none;
         font-size: 22px;
         font-weight: 600;
-        border-radius: 12px;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        border: 2px solid #42A5F5;
+        border-radius: 15px;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        box-shadow: 0px 0px 10px rgba(66,165,245,0.2);
     }
 
     .link-button:hover {
-        background: linear-gradient(90deg, #0D47A1, #2196F3);
-        transform: scale(1.05);
-        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        border-color: #90CAF9;
+        background-color: rgba(66,165,245,0.1);
+        transform: scale(1.04);
+        box-shadow: 0px 0px 25px rgba(66,165,245,0.4);
         text-shadow: 0px 0px 8px #BBDEFB;
     }
 
     footer {
-        margin-top: 50px;
+        margin-top: 60px;
+        text-align: center;
+        color: #78909c;
         font-size: 14px;
-        color: #E3F2FD;
     }
     </style>
-    """, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
-# --- Judul Utama ---
+# --- Judul ---
 st.markdown("""
     <div class="main">
-        <h1>🌟 Portal Tugas Deep Learning 🌟</h1>
+        <h1>🧠 Portal Tugas Deep Learning</h1>
         <h3>Oleh: <b>Farhan Ahmad Alvaro</b></h3>
-        <hr style="width: 50%; margin: auto; border: 1px solid #E3F2FD;">
+        <hr style="width: 40%; margin: auto; border: 1px solid #42A5F5;">
     </div>
 """, unsafe_allow_html=True)
 
-# --- URL (Edit Sesuai Tugasmu) ---
+# --- URL Tugas ---
 URL_TUGAS_1 = "http://faalvaro.pythonanywhere.com/"
 URL_TUGAS_2 = "https://tugas-generate-text.streamlit.app/"
 URL_TUGAS_3 = "https://tugas-prediksi-saham.streamlit.app/"
 
-# --- Tombol Navigasi Tugas ---
+# --- Tombol Navigasi ---
 st.markdown(f"""
     <div class="link-container">
         <a href="{URL_TUGAS_1}" target="_blank" class="link-button">
