@@ -1,121 +1,70 @@
-# -----------------------------------------------------------------
-# NAMA FILE: app.py
-# (Portal Utama Tugas Deep Learning - Versi Elegan Tanpa Background Biru)
-# -----------------------------------------------------------------
 import streamlit as st
 
 st.set_page_config(page_title="Portal Tugas Deep Learning", layout="wide")
 
-# --- CSS untuk tampilan elegan ---
 st.markdown("""
     <style>
-    body {
-        background-color: #0e1117;
-        font-family: 'Segoe UI', sans-serif;
-    }
-
-    .main {
-        text-align: center;
-        margin-top: 60px;
-        color: white;
-    }
-
-    h1 {
-        font-size: 3em;
-        font-weight: 700;
-        margin-bottom: 5px;
-    }
-
-    h3 {
-        font-size: 1.3em;
-        color: #b0bec5;
-        margin-bottom: 40px;
-    }
-
     .link-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 25px;
-        margin-top: 20px;
+        gap: 20px;
+        margin-top: 40px;
     }
-
     .link-button {
         display: block;
         width: 80%;
         max-width: 500px;
         padding: 20px;
-        color: #e3f2fd;
+        background-color: #1E88E5;
+        color: white;
         text-align: center;
         text-decoration: none;
-        font-size: 22px;
-        font-weight: 600;
-        border: 2px solid #42A5F5;
-        border-radius: 15px;
-        background-color: transparent;
-        transition: all 0.3s ease;
-        box-shadow: 0px 0px 10px rgba(66,165,245,0.2);
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: background-color 0.3s;
     }
-
     .link-button:hover {
-        color: #ffffff;
-        border-color: #90CAF9;
-        background-color: rgba(66,165,245,0.1);
-        transform: scale(1.04);
-        box-shadow: 0px 0px 25px rgba(66,165,245,0.4);
-        text-shadow: 0px 0px 8px #BBDEFB;
+        background-color: #0D47A1;
+        color: white;
     }
-
-    footer {
-        margin-top: 60px;
+    .link-button.tugas-4 { /* Warna berbeda untuk tugas 4 */
+        background-color: #28a745; /* Hijau */
+    }
+    .link-button.tugas-4:hover {
+        background-color: #1a5c2a; /* Hijau tua */
+    }
+    h1, h3 {
         text-align: center;
-        color: #78909c;
-        font-size: 14px;
     }
     </style>
-""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
-# --- Judul ---
-st.markdown("""
-    <div class="main">
-        <h1>Tugas Mata Kuliah Deep Learning</h1>
-        <h3>
-            Farhan Ahmad Alvaro
-        </h3>
-        <h3>
-            50422520
-        </h3>
-        <h3>
-            4IA08
-        </h3>
-        <hr style="width: 40%; margin: auto; border: 1px solid #42A5F5;">
-    </div>
-""", unsafe_allow_html=True)
+# --- Judul Utama ---
+st.markdown("<h1>Web Tugas Deep Learning</h1>", unsafe_allow_html=True)
+st.markdown("<h3>Oleh: [Nama Anda Di Sini]</h3>", unsafe_allow_html=True)
+st.markdown("---")
 
-# --- URL Tugas ---
+# --- URL DARI ANDA (LENGKAP) ---
 URL_TUGAS_1 = "http://faalvaro.pythonanywhere.com/"
 URL_TUGAS_2 = "https://tugas-generate-text.streamlit.app/"
 URL_TUGAS_3 = "https://tugas-prediksi-saham.streamlit.app/"
+URL_TUGAS_4 = "https://tugas-cnn-mnist.streamlit.app/" # <-- LINK BARU ANDA
 
-# --- Tombol Navigasi ---
 st.markdown(f"""
     <div class="link-container">
         <a href="{URL_TUGAS_1}" target="_blank" class="link-button">
-            🧮 Tugas 1: Logic Calculator
+            Tugas 1: Logic Calculator
         </a>
         <a href="{URL_TUGAS_2}" target="_blank" class="link-button">
-            ✍️ Tugas 2: Generate Text
+            Tugas 2: Generate Text
         </a>
         <a href="{URL_TUGAS_3}" target="_blank" class="link-button">
-            📈 Tugas 3: Prediksi Saham
+            Tugas 3: Prediksi Saham
+        </a>
+        <a href="{URL_TUGAS_4}" target="_blank" class="link-button tugas-4">
+            Tugas 4: Klasifikasi Angka (CNN)
         </a>
     </div>
-
-    <footer>
-        © 2025 | Farhan Ahmad Alvaro — Universitas Gunadarma
-    </footer>
-""", unsafe_allow_html=True)
-
-
-
-
+    """, unsafe_allow_html=True)
