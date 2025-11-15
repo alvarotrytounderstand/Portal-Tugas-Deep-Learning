@@ -1,3 +1,7 @@
+# -----------------------------------------------------------------
+# NAMA FILE: portal_utama.py
+# (KODE DIPERBARUI: Tombol Abu-abu, Tema Terang)
+# -----------------------------------------------------------------
 import streamlit as st
 
 st.set_page_config(page_title="Portal Tugas Deep Learning", layout="wide")
@@ -16,8 +20,8 @@ st.markdown("""
         width: 80%;
         max-width: 500px;
         padding: 20px;
-        background-color: #1E88E5;
-        color: white;
+        background-color: #555555; /* PERUBAHAN: Abu-abu Gelap */
+        color: white; /* PERUBAHAN: Tulisan Putih */
         text-align: center;
         text-decoration: none;
         font-size: 24px;
@@ -26,17 +30,12 @@ st.markdown("""
         transition: background-color 0.3s;
     }
     .link-button:hover {
-        background-color: #0D47A1;
+        background-color: #333333; /* PERUBAHAN: Abu-abu Lebih Gelap */
         color: white;
-    }
-    .link-button.tugas-4 { /* Warna berbeda untuk tugas 4 */
-        background-color: #28a745; /* Hijau */
-    }
-    .link-button.tugas-4:hover {
-        background-color: #1a5c2a; /* Hijau tua */
     }
     h1, h3 {
         text-align: center;
+        color: #000000; /* Pastikan judul tetap hitam di tema terang */
     }
     </style>
     """, unsafe_allow_html=True)
@@ -50,7 +49,7 @@ st.markdown("---")
 URL_TUGAS_1 = "http://faalvaro.pythonanywhere.com/"
 URL_TUGAS_2 = "https://tugas-generate-text.streamlit.app/"
 URL_TUGAS_3 = "https://tugas-prediksi-saham.streamlit.app/"
-URL_TUGAS_4 = "https://tugas-cnn-mnist.streamlit.app/" # <-- LINK BARU ANDA
+URL_TUGAS_4 = "https://tugas-cnn-mnist.streamlit.app/"
 
 st.markdown(f"""
     <div class="link-container">
@@ -63,7 +62,7 @@ st.markdown(f"""
         <a href="{URL_TUGAS_3}" target="_blank" class="link-button">
             Tugas 3: Prediksi Saham
         </a>
-        <a href="{URL_TUGAS_4}" target="_blank" class="link-button tugas-4">
+        <a href="{URL_TUGAS_4}" target="_blank" class="link-button">
             Tugas 4: Klasifikasi Angka (CNN)
         </a>
     </div>
