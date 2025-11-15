@@ -42,7 +42,9 @@ st.markdown("""
 
 # --- Judul Utama ---
 st.markdown("<h1>Web Tugas Deep Learning</h1>", unsafe_allow_html=True)
-st.markdown("<h3>Oleh: [Nama Anda Di Sini]</h3>", unsafe_allow_html=True)
+st.markdown("<h3>Farhan Ahmad Alvaro</h3>", unsafe_allow_html=True)
+st.markdown("<h3>50422520</h3>", unsafe_allow_html=True)
+st.markdown("<h3>4IA08</h3>", unsafe_allow_html=True)
 st.markdown("---")
 
 # --- URL DARI ANDA (LENGKAP) ---
@@ -67,3 +69,4 @@ st.markdown(f"""
         </a>
     </div>
     """, unsafe_allow_html=True)
+
